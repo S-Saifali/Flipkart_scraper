@@ -35,13 +35,7 @@ for i in range(start_page, end_page + 1):
 
     for price in all_prices:
         single_price = price.text
-        d['price'].append(single_price)
-
-    # all_discounts = box.find_all('div', class_ = '_3Ay6Sb')
-
-    # for discount in all_discounts:
-    #     single_discount = discount.text
-    #     d['discount'].append(single_discount)          
+        d['price'].append(single_price)         
 
     specific_divs = box.find_all('div', class_='_4ddWXP')
 
